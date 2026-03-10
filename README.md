@@ -216,7 +216,7 @@ CRUD operations with JSON Server
 ![LoginPage](https://github.com/jinaljain0705/ReactJS-Student-ManagementProject/blob/main/src/assets/screenshot/LoginPage.png)
 
 ## Home
-![Home]()
+![Home](https://github.com/jinaljain0705/ReactJS-Student-ManagementProject/blob/main/src/assets/screenshot/HomePage.png)
 
 ## AddStudents
 ![AddStudents]()
