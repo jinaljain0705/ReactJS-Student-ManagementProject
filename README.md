@@ -213,7 +213,7 @@ CRUD operations with JSON Server
 # ScreenShot
 
 ## LoginPage
-![LoginPage]()
+![LoginPage](https://github.com/jinaljain0705/ReactJS-Student-ManagementProject/blob/main/src/assets/screenshot/LoginPage.png)
 
 ## Home
 ![Home]()
