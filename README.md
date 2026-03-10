@@ -1,16 +1,222 @@
-# React + Vite
+# 🎓 Student Management System (React + Redux + JSON Server)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Student Management System built using React, Redux, Redux Thunk, React Router, Bootstrap, and JSON Server.
+This project allows users to manage student records with full CRUD operations including adding, updating, viewing, and deleting students.
 
-Currently, two official plugins are available:
+The application also includes basic authentication, sorting, filtering, and a responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Features
+## 📋 Student Management
 
-## React Compiler
+View all students in a list or card layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Add new student records
 
-## Expanding the ESLint configuration
+Update existing student information
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Delete students from the system
+
+## 🔐 Authentication
+
+Simple login system using localStorage
+
+Protected routes using PrivateRoute
+
+Logout automatically redirects to login page
+
+## 🎛 Data Handling
+
+Global state management using Redux
+
+Async API calls using Redux Thunk
+
+Backend simulation using JSON Server
+
+## 📊 Extra Functionalities
+
+Sorting students by Name or Roll Number
+
+Filtering students by Class
+
+Responsive Bootstrap UI
+
+Dashboard-style Home Page
+
+Student Cards display
+
+## 🛠 Technologies Used
+
+React JS
+
+Redux
+
+React Redux
+
+Redux Thunk
+
+React Router DOM
+
+Axios
+
+Bootstrap
+
+JSON Server
+
+# 📁 Project Structure
+
+```
+src
+│
+├── components
+│   ├── Navbar.jsx
+│   ├── StudentList.jsx
+│   ├── StudentForm.jsx
+│   ├── StudentDetails.jsx
+│   └── PrivateRoute.jsx
+│
+├── pages
+│   ├── Home.jsx
+│   └── Login.jsx
+│
+├── redux
+│   ├── actions.js
+│   ├── reducer.js
+│   ├── store.js
+│   └── thunks.js
+│
+├── App.jsx
+└── index.js
+```
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone the Project
+```
+git clone https://github.com/your-username/student-management-system.git
+```
+
+## 2️⃣ Install Dependencies
+```
+npm install
+```
+
+## 3️⃣ Install Bootstrap
+```
+npm install bootstrap
+```
+
+## 4️⃣ Import Bootstrap in index.js
+```
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+## 5️⃣ Start React App
+```
+npm run dev
+```
+
+or (if using CRA)
+
+```
+npm start
+```
+
+# 🗄 JSON Server Setup
+
+## Install JSON Server:
+
+```
+npm install -g json-server
+```
+
+## Create db.json
+
+```
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Rahul",
+      "roll": "101",
+      "class": "10"
+    },
+    {
+      "id": 2,
+      "name": "Priya",
+      "roll": "102",
+      "class": "9"
+    }
+  ]
+}
+```
+
+## Run the server:
+
+```
+json-server --watch db.json --port 5000
+```
+
+## API endpoint:
+```
+http://localhost:5000/students
+```
+
+# 🔄 CRUD Operations
+
+Operation	Method	Endpoint
+Get Students	GET	/students
+Add Student	POST	/students
+Update Student	PUT	/students/:id
+Delete Student	DELETE	/students/:id
+
+# 🔑 Authentication
+
+Authentication is implemented using localStorage.
+
+Login → stores "auth" in localStorage
+
+Private routes check authentication status
+
+Logout removes "auth" and redirects to login page
+
+# 🎨 UI Components
+
+Responsive Navbar
+
+Dashboard-style Home Page
+
+Student Card Layout
+
+Add Student Form
+
+Clean Bootstrap UI
+
+# 📌 Learning Outcomes
+
+This project demonstrates:
+
+React component architecture
+
+Redux state management
+
+Async operations with Redux Thunk
+
+API integration with Axios
+
+Client-side authentication
+
+Routing using React Router
+
+CRUD operations with JSON Server
+
+# 👨‍💻 Author
+
+Jinal Jain
+
+Full Stack Developer Student
+
+Red & White Multimedia Education
+
+# ⭐ Project Purpose
+
+This project was created as part of a React JS practical exam and learning exercise to demonstrate full-stack frontend concepts including Redux, API integration, authentication, and UI development using Bootstrap.
