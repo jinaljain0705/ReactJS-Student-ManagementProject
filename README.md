@@ -163,11 +163,12 @@ http://localhost:5000/students
 
 # 🔄 CRUD Operations
 
-Operation	Method	Endpoint
-Get Students	GET	/students
-Add Student	POST	/students
-Update Student	PUT	/students/:id
-Delete Student	DELETE	/students/:id
+| Operation        | Method | Endpoint        |
+|------------------|--------|-----------------|
+| Get Students     | GET    | /students       |
+| Add Student      | POST   | /students       |
+| Update Student   | PUT    | /students/:id   |
+| Delete Student   | DELETE | /students/:id   |
 
 # 🔑 Authentication
 
@@ -208,6 +209,20 @@ Client-side authentication
 Routing using React Router
 
 CRUD operations with JSON Server
+
+# ScreenShot
+
+## LoginPage
+![LoginPage]()
+
+## Home
+![Home]()
+
+## AddStudents
+![AddStudents]()
+
+## StudentsList
+![StudentsList]()
 
 # 👨‍💻 Author
 
